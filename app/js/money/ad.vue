@@ -19,6 +19,7 @@ export default {
 @import "../../css/element.scss";
 .panel {
   @include panel;
+  border-radius: 5px;
   >h4{
     display: none;
   }

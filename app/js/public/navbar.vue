@@ -1,7 +1,7 @@
 <template lang="html">
   <panel title="导航条" :class="$style.panel">
-      <ul :class="$style.content">
-        <li>
+      <ul :class="$style.content" >
+        <li @click="active()"  :class="{$style.active:activeindex ==1}">
             <router-link :to="{ name:'home'}">
                 <img src="//img12.360buyimg.com/jrpmobile/jfs/t1/931/18/14488/935/5bda58fdE542c2cc7/f29a349a4ed750ca.png?width=60&height=60">
                 <p>首页</p>
@@ -40,6 +40,16 @@ import panel from "../core/panel.vue";
 export default {
   components: {
     panel
+  },
+  data() {
+   return{
+      activeindex: 0
+   }
+  },
+  methods: {
+    active() {
+      activeindex = 1;
+    }
   }
 };
 </script>
@@ -49,30 +59,33 @@ export default {
 .panel {
   @include panel;
   position: fixed;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   height: 100px;
   z-index: 100;
   margin: 0;
-  >h4{
+  > h4 {
     display: none;
   }
   .content {
     @include flex(row);
     justify-content: space-around;
-    li{
+    li {
       text-align: center;
-      a{
+      .active{
+        color:red;
+      }
+      a {
         text-decoration: none;
       }
-      img{
+      img {
         width: 44px;
-        height:44px;
+        height: 44px;
         display: inline-block;
-        margin:12px auto 6px;
+        margin: 12px auto 6px;
       }
-      p{
+      p {
         font-size: 22px;
         color: #656565;
       }

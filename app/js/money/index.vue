@@ -8,6 +8,9 @@
         <Ada></Ada>
         <Bank></Bank>
         <Borrow></Borrow>
+        <Adb></Adb>
+        <Insu></Insu>
+        <Recommend></Recommend>
         <Bottom></Bottom>
         <Navbar></Navbar>
     </div>
@@ -24,6 +27,9 @@ import Money from './money.vue'
 import Ada from './ada.vue'
 import Bank from './bank.vue'
 import Borrow from './borrow.vue'
+import Adb from './adb.vue'
+import Insu from './insu.vue'
+import Recommend from './recommend.vue'
 export default {
   components: {
     Heador,
@@ -36,6 +42,9 @@ export default {
     Ada,
     Bank,
     Borrow,
+    Adb,
+    Insu,
+    Recommend,
   }
 }
 </script>
