@@ -1,5 +1,5 @@
 <template lang="html">
-  <panel title="理财精选" :class="$style.panel">
+  <panel title="-理财精选-" :class="$style.panel">
       <section :class="$style.content">
           <dl :class="$style.item" v-for="item in items" :key="item.title">
           <router-link :to="{ name:'home'}">

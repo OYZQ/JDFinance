@@ -4,26 +4,35 @@
         <Slider></Slider>
         <Borrow></Borrow>
         <Money></Money>
-        <Novice></Novice>
+        <Product></Product>
+        <Ensure></Ensure>
+        <New></New>
         <Bottom></Bottom>
+        <Navbar></Navbar>
     </div>
 </template>
 
 <script>
 import Heador from '../public/header.vue'
+import Bottom from '../public/bottom.vue'
+import Navbar from '../public/navbar.vue'
 import Slider from './hslider.vue'
 import Borrow from './borrow.vue'
-import Novice from './novice.vue'
-import Bottom from './bottom.vue'
 import Money from './money.vue'
+import Product from './product.vue'
+import Ensure from './ensure.vue'
+import New from './new.vue'
 export default {
   components: {
     Heador,
     Slider,
     Borrow,
-    Novice,
     Bottom,
-    Money
+    Money,
+    Product,
+    Ensure,
+    New,
+    Navbar
   }
 }
 </script>
