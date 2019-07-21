@@ -33,24 +33,23 @@ export default {
       {
         src:"//img12.360buyimg.com/jrpmobile/jfs/t1/5291/40/14133/594/5bda5ca3E92d0e800/09ac81fa5a5c96ef.png?width=60&height=60",
         name:'借钱',
-        path:'/',
+        path:'/borrow',
       },
       {
         src:"//img12.360buyimg.com/jrpmobile/jfs/t1/3358/38/14064/816/5bda5cabEcb7eca8b/9bb064f1cda7ceba.png?width=60&height=60",
         name:'省钱',
-        path:'/',
+        path:'/save',
       },
       {
         src:"//img12.360buyimg.com/jrpmobile/jfs/t1/7491/15/4277/926/5bda5cb9E421a0e60/89ee14ce9daf4aab.png?width=60&height=60",
         name:'金融会员',
-        path:'/',
+        path:'/member',
       }]
     }
   },
   methods: {
     click(index){
       this.isactive = index;
-      console.log(index)
     }
   }
 };
@@ -77,10 +76,6 @@ export default {
     justify-content: space-around;
     li {
       text-align: center;
-      .active{
-        color:rgb(70, 104, 255);
-      }
-      
       a {
         text-decoration: none;
       }
@@ -99,6 +94,6 @@ export default {
 </style>
 <style>
 .active{
-  color: red;
+  color:rgb(70, 104, 255);;
 }
 </style>
