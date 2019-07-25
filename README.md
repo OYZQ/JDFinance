@@ -82,10 +82,4 @@ git branch
 git checkout 分支名
 ```
 
-### 常见问题
-
-这里会定期整理大家常见的问题，访问如下：
-
-<a href="./issue.md" target="_blank">点击查看常见问题</a>
-
 # JDFinance
