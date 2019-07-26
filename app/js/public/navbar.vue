@@ -64,10 +64,10 @@ export default {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   height: 100px;
   z-index: 100;
-  margin: 0;
+  margin: 0 auto;
   > h4 {
     display: none;
   }
